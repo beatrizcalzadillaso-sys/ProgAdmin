@@ -127,3 +127,5 @@ public class productos {
 		listaProductos[mo].setPrecio(Double.valueOf(sc.nextLine()));
 	}
 }
+
+//abdel
