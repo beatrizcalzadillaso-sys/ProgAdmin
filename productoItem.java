@@ -1,8 +1,7 @@
-package productos;
+package reto1prototipos;
 
 public class productoItem {
 	private int codProd;
-    private String tipoProd;
     private int tipoNum;
     private String nomProd;
     private double precio;
@@ -14,16 +13,6 @@ public class productoItem {
 
 	public void setCodProd(int codProd) {
 		this.codProd = codProd;
-	}
-
-
-	public String getTipoProd() {
-		return tipoProd;
-	}
-
-
-	public void setTipoProd(String tipoProd) {
-		this.tipoProd = tipoProd;
 	}
 
 
@@ -57,9 +46,8 @@ public class productoItem {
 	}
 
 
-	public productoItem(int codProd, String tipoProd, int tipoNum, String nomProd, double precio) {
+	public productoItem(int codProd, int tipoNum, String nomProd, double precio) {
         this.codProd = codProd;
-        this.tipoProd = tipoProd;
         this.tipoNum = tipoNum;
         this.nomProd = nomProd;
         this.precio = precio;
@@ -67,6 +55,6 @@ public class productoItem {
 
     
     public String toString() {
-        return codProd + " | " + tipoProd + " | " + tipoNum + " | " + nomProd + " | " + precio;
+        return codProd + " | " + tipoNum + " | " + nomProd + " | " + precio;
     }
 }
