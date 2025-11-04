@@ -1,4 +1,4 @@
-package reto1prototipos;
+package retrotipos;
 
 public class productoItem {
 	private int codProd;
