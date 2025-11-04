@@ -20,7 +20,7 @@ public class productos {
 			System.out.println("3 - Modificar");
 			int op = Integer.valueOf(sc.nextLine());
 			if (op == 1) {
-				/// mostrar productos para ver ID, si lalista esta vacia, notificar, y decir que
+				/// mostrar productos para ver ID, si la lista esta vacia, notificar, y decir que
 				/// hay que agregar productos antes de eliminar alguno, y regresar al menu inicio
 				matar(); // cambiar nombre, a "eliminar"
 			}
