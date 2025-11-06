@@ -5,12 +5,9 @@ import java.util.Scanner;
 public class Admin {
 
 	static Scanner sc = new Scanner(System.in);
-	public static ProductoItem listaProductos[] = new ProductoItem[50];
+	public static ProductoItem listaProductos[] = Inicio.listaProductos;
 
 	public static void main(String[] args) {
-
-		inicializarListaProductos();
-
 		// login de administrador.
 
 		int select = 0;
@@ -32,17 +29,6 @@ public class Admin {
 			}
 
 		} while (select!=4);
-	}
-
-	/**
-	 * PLACEHOLDER, CAMBIAR A OTRA CLASE CUANDO EXISTA
-	 */
-	public static void inicializarListaProductos() {
-
-		listaProductos[0] = new ProductoItem(112, 1, "Agua natural", 1.26);
-		listaProductos[1] = new ProductoItem(123, 1, "Agua con gas", 1.26);
-		listaProductos[2] = new ProductoItem(134, 1, "Zumo de naranja", 1.35);
-		listaProductos[3] = new ProductoItem(145, 1, "Zumo de tomate", 1.35);
 	}
 	
 	/**
@@ -67,7 +53,7 @@ public class Admin {
 	 * Elimina el objeto (usando el ID) que el usuario quiera.
 	 */
 	public static void eliminar() {
-		System.out.print("¿A quien quieres eliminar? (id): \n");
+		System.out.print("¿Que producto quieres eliminar? (id): \n");
 		mostrar();
 		// op significa opcion.
 		int op = Integer.valueOf(sc.nextLine());
