@@ -13,12 +13,14 @@ public class Admin {
 
 		// login de administrador.
 
-		while (true) {
+		int select = 0;
+		do {
 			System.out.println("¿Que quieres hacer?");
 			System.out.println("1 - Eliminar");
 			System.out.println("2 - Crear");
 			System.out.println("3 - Modificar");
-			int select = Integer.valueOf(sc.nextLine());
+			System.out.println("4 - Salir");
+			select = Integer.valueOf(sc.nextLine());
 			if (select == 1) {
 				eliminar();
 			}
@@ -29,7 +31,7 @@ public class Admin {
 				mod();
 			}
 
-		}
+		} while (select!=4);
 	}
 
 	/**
